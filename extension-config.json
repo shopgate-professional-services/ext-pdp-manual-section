@@ -1,0 +1,72 @@
+{
+  "version": "1.0.0",
+  "id": "@shopgate-project/pdp-manual-section",
+  "components": [
+    {
+      "id": "OpenPdfFiles",
+      "type": "portals",
+      "path": "frontend/Portals/ProductDescriptionAfter",
+      "target": "product.description.after"
+    }
+  ],
+  "configuration": {
+    "sectionTitle": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": "Manuals",
+      "params": {
+        "type": "text",
+        "label": "Label for the section title"
+      }
+    },
+    "manualsProperty": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": "Downloads",
+      "params": {
+        "required": true,
+        "type": "text",
+        "label": "Name of product property which contains manuals urls"
+      }
+    },
+    "manualsPrefixUrl": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": "https://www.pollin.de/productdownloads/",
+      "params": {
+        "required": true,
+        "type": "text",
+        "label": "Prefix url of where to find the manuals files"
+      }
+    },
+    "typeIndices": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": [
+        {
+          "searchPattern": "B.pdf",
+          "fileType": "Beschreibung"
+        },
+        {
+          "searchPattern": "D.pdf",
+          "fileType": "Produktdatenblatt"
+        }
+      ],
+      "params": {
+        "required": true,
+        "type": "json",
+        "label": "Value for type indices"      
+      }
+    },
+    "propertySplit": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": "\n",
+      "params": {
+        "required": true,
+        "type": "text",
+        "label": "Text for spliting Property value"
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ManualsSection /> should not render if no manual urls 1`] = `
+<ManualsSection
+  config={
+    Object {
+      "sectionTitle": "mock",
+    }
+  }
+  manualUrls={null}
+/>
+`;
+
+exports[`<ManualsSection /> should render if provided with manual urls 1`] = `
+<ManualsSection
+  config={
+    Object {
+      "sectionTitle": "mock",
+    }
+  }
+  manualUrls={
+    Array [
+      Object {
+        "label": "mock",
+        "type": "mock",
+        "url": "mock",
+      },
+    ]
+  }
+>
+  <div
+    className="css-1x4o693"
+  >
+    <div
+      className="css-ox5bz"
+    >
+      <span
+        className="css-cr37k0"
+      >
+        mock
+      </span>
+      <Connect(Link)
+        className="css-y7rgl7"
+        href="mock"
+        key="mock"
+      />
+    </div>
+  </div>
+</ManualsSection>
+`;
