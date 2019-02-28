@@ -32,7 +32,7 @@
     "manualsPrefixUrl": {
       "type": "admin",
       "destination": "frontend",
-      "default": "https://www.pollin.de/productdownloads/",
+      "default": null,
       "params": {
         "required": true,
         "type": "text",
@@ -42,16 +42,7 @@
     "typeIndices": {
       "type": "admin",
       "destination": "frontend",
-      "default": [
-        {
-          "searchPattern": "B.pdf",
-          "fileType": "Beschreibung"
-        },
-        {
-          "searchPattern": "D.pdf",
-          "fileType": "Produktdatenblatt"
-        }
-      ],
+      "default": null,
       "params": {
         "required": true,
         "type": "json",

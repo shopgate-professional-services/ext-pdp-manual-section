@@ -42,7 +42,7 @@ Set the following values in your Shopgate Connect Admin:
         "fileType": "Documentation"
       }
     ],
-  "manualsPrefixUrl": "https://www.shopgate.com/productdownloads/",
+  "manualsPrefixUrl": "https://example.com/examplePathname",
   "manualsProperty": "downloads",
   "sectionTitle": "Manuals"
 }
