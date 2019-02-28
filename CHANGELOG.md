@@ -9,3 +9,5 @@ First version of the extension.
 ### Added
 - Added support to display pdf files passed through properties on pdp pages.
 - Configurations include sectionTitle, manualsProperty, manualsPrefixUrl, typeIndices, and propertySplit.
+
+[Link to Diff](https://github.com/shopgate-professional-services/ext-pdp-manual-section/compare/v0.0.1...v1.0.0)
