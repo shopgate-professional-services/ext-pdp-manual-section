@@ -28,7 +28,7 @@ Set the following values in your Shopgate Connect Admin:
   * (required) used for constructing array for filtering
 
 ## Example config
-'''
+```
 {
   "propertySplit": "\n",
   "typeIndices": 
@@ -46,7 +46,7 @@ Set the following values in your Shopgate Connect Admin:
   "manualsProperty": "downloads",
   "sectionTitle": "Manuals"
 }
-'''
+```
 ## About Shopgate
 
 Shopgate is the leading mobile commerce platform.
