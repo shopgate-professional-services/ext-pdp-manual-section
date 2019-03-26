@@ -13,32 +13,36 @@ exports[`ManualsSection should render 1`] = `
     }
   }
 >
-  <Connect(Component)
+  <ProductDescriptionAfter
     id="foo"
   >
-    <Component
-      dispatch={[Function]}
-      id="foo"
-      manualUrls={Array []}
+    <Connect(Component)
+      productId={false}
     >
       <Component
-        config={
-          Object {
-            "manualsPrefixUrl": null,
-            "manualsProperty": "Downloads",
-            "propertySplit": "
-",
-            "sectionTitle": "Manuals",
-            "typeIndices": null,
-          }
-        }
+        dispatch={[Function]}
         manualUrls={Array []}
+        productId={false}
       >
-        <div>
-          ManualsSection
-        </div>
+        <Component
+          config={
+            Object {
+              "manualsPrefixUrl": null,
+              "manualsProperty": "Downloads",
+              "propertySplit": "
+",
+              "sectionTitle": "Manuals",
+              "typeIndices": null,
+            }
+          }
+          manualUrls={Array []}
+        >
+          <div>
+            ManualsSection
+          </div>
+        </Component>
       </Component>
-    </Component>
-  </Connect(Component)>
+    </Connect(Component)>
+  </ProductDescriptionAfter>
 </Provider>
 `;

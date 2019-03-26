@@ -32,5 +32,3 @@ const ProductDescriptionAfter = () => {
 };
 
 export default ProductDescriptionAfter;
-
-export { ManualsSectionContext as UnwrappedManualsSection };
