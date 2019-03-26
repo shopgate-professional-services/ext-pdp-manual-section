@@ -13,7 +13,6 @@ export const getManualUrls = createSelector(
     if (!properties) {
       return parsedManualUrls;
     }
-
     const manualUrls = properties.find(property => (
       property.label === manualsProperty
     ));

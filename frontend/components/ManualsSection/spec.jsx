@@ -5,7 +5,11 @@ import ManualsSection from './index';
 jest.mock('@shopgate/pwa-common/components/Link');
 
 const noManualUrls = null;
-const manualUrls = [{ label: 'mock', url: 'mock', type: 'mock' }];
+const manualUrls = [{
+  label: 'mock',
+  url: 'mock',
+  type: 'mock',
+}];
 const mockConfig = { sectionTitle: 'mock' };
 describe('<ManualsSection />', () => {
   it('should not render if no manual urls', () => {

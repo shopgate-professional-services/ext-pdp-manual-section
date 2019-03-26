@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ManualsSection should render 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(Component)
+    id="foo"
+  >
+    <Component
+      dispatch={[Function]}
+      id="foo"
+      manualUrls={Array []}
+    >
+      <Component
+        config={
+          Object {
+            "manualsPrefixUrl": null,
+            "manualsProperty": "Downloads",
+            "propertySplit": "
+",
+            "sectionTitle": "Manuals",
+            "typeIndices": null,
+          }
+        }
+        manualUrls={Array []}
+      >
+        <div>
+          ManualsSection
+        </div>
+      </Component>
+    </Component>
+  </Connect(Component)>
+</Provider>
+`;
