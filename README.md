@@ -1,6 +1,9 @@
 # Shopgate Connect - Extension pdp-manual-section
 Extension will render a section for pdf downloads on the Product Detail Page. Extension takes required configurations in order to render properly.
 
+[![Build Status](https://travis-ci.org/shopgate-professional-services/ext-pdp-manual-section.svg?branch=master)](https://travis-ci.org/shopgate-professional-services/ext-pdp-manual-section)
+[![Coverage Status](https://coveralls.io/repos/github/shopgate-professional-services/ext-pdp-manual-section/badge.svg?branch=master)](https://coveralls.io/github/shopgate-professional-services/ext-pdp-manual-section?branch=master)
+
 ## Configuration
 Add the pdp-manual-section extension to your Shopgate Connect deployment config.
 
