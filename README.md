@@ -46,7 +46,7 @@ Set the following values in your Shopgate Connect Admin:
       }
     ],
   "manualsPrefixUrl": "https://example.com/examplePathname",
-  "manualsProperty": "downloads",
+  "manualsProperty": "Downloads",
   "sectionTitle": "Manuals"
 }
 ```
