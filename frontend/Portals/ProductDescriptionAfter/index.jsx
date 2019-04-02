@@ -19,16 +19,16 @@ const ManualsSectionContext = connect(({
  * @returns {JSX}
  */
 const ProductDescriptionAfter = () => {
-  if (config.manualsProperty) {
-    return (
-      <RouteContext.Consumer>
-        {({ params }) =>
-          <ManualsSectionContext productId={hex2bin(params.productId)} />
-      }
-      </RouteContext.Consumer>
-    );
+  if (!config.manualsProperty) {
+    return null;
   }
-  return null;
+  return (
+    <RouteContext.Consumer>
+      {({ params }) =>
+        <ManualsSectionContext productId={hex2bin(params.productId)} />
+    }
+    </RouteContext.Consumer>
+  );
 };
 
 export default ProductDescriptionAfter;

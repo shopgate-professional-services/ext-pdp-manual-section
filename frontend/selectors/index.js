@@ -16,21 +16,23 @@ export const getManualUrls = createSelector(
     const manualUrls = properties.find(property => (
       property.label === manualsProperty
     ));
-    if (manualUrls) {
-      manualUrls.value.split(propertySplit).forEach((url) => {
-        const filteredObject = typeIndices.filter((index) => {
-          const regex = new RegExp(index.searchPattern, 'gi');
-          return regex.test(url);
-        });
-        if (filteredObject.length > 0) {
-          parsedManualUrls.push({
-            label: filteredObject[0].searchPattern,
-            url: manualsPrefixUrl + url,
-            type: filteredObject[0].fileType,
-          });
-        }
-      });
+    if (!manualUrls) {
+      return parsedManualUrls;
     }
+    manualUrls.value.split(propertySplit).forEach((url) => {
+      const filteredObject = typeIndices.filter((index) => {
+        const regex = new RegExp(index.searchPattern, 'gi');
+        return regex.test(url);
+      });
+      if (!filteredObject.length > 0) {
+        return;
+      }
+      parsedManualUrls.push({
+        label: filteredObject[0].searchPattern,
+        url: manualsPrefixUrl + url,
+        type: filteredObject[0].fileType,
+      });
+    });
 
     return parsedManualUrls;
   }
