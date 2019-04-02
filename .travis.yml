@@ -5,8 +5,8 @@ node_js:
 - "10"
 install:
 - cd frontend && npm i
-before_script: touch ./frontend/config.json && echo "{}" >> ./frontend/config.json
-script: cd frontend && npm run coverage --maxWorkers=4 --ci
-after_script: cd frontend && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+before_script: touch ./config.json && echo "{}" >> ./config.json
+script: npm run coverage --maxWorkers=4 --ci
+after_script: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 notifications:
   email: false
