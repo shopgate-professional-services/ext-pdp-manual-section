@@ -26,9 +26,6 @@ const createComponent = () => mount(
 );
 
 describe('ManualsSection', () => {
-  beforeEach(() => {
-    jest.resetModules();
-  });
   it('should render with correct config passed', () => {
     const component = createComponent();
     expect(component.find('div').exists()).toBe(true);
