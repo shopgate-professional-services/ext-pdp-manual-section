@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from '@shopgate/pwa-common/components/Link';
+import I18n from '@shopgate/pwa-common/components/I18n';
 import FileIcon from '../../icons/FileIcon';
 import styles from './style';
 
@@ -25,7 +26,8 @@ const ManualsSection = ({ config, manualUrls }) => {
             className={styles.singleLink}
             href={value.url}
           >
-            <FileIcon className={styles.icon} />&nbsp;&nbsp; Open {value.type}
+            <FileIcon className={styles.icon} />
+            <I18n.Text string="pdp_manual_section.link_label.open" /> {value.type}
           </Link>
         )))}
       </div>

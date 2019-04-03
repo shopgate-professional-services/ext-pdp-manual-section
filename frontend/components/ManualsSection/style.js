@@ -28,6 +28,7 @@ const icon = css({
   display: 'inline-block',
   verticalAlign: '-.125em',
   maxWidth: '100%',
+  marginRight: '16px',
 }).toString();
 
 export default {

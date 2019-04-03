@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ManualsSection should render 1`] = `
+exports[`ManualsSection should render with correct config passed 1`] = `
 <Provider
   store={
     Object {
@@ -15,6 +15,43 @@ exports[`ManualsSection should render 1`] = `
 >
   <ProductDescriptionAfter
     id="foo"
-  />
+  >
+    <Connect(Component)
+      productId={false}
+    >
+      <Component
+        dispatch={[Function]}
+        manualUrls={Array []}
+        productId={false}
+      >
+        <Component
+          config={
+            Object {
+              "manualsPrefixUrl": "https://example.com/examplePathname",
+              "manualsProperty": "Downloads",
+              "propertySplit": "
+",
+              "sectionTitle": "Manuals",
+              "typeIndices": Array [
+                Object {
+                  "fileType": "Brochure",
+                  "searchPattern": "B.pdf",
+                },
+                Object {
+                  "fileType": "Documentation",
+                  "searchPattern": "D.pdf",
+                },
+              ],
+            }
+          }
+          manualUrls={Array []}
+        >
+          <div>
+            ManualsSection
+          </div>
+        </Component>
+      </Component>
+    </Connect(Component)>
+  </ProductDescriptionAfter>
 </Provider>
 `;

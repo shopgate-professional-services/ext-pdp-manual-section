@@ -5,8 +5,13 @@
     {
       "id": "OpenPdfFiles",
       "type": "portals",
-      "path": "frontend/Portals/ProductDescriptionAfter",
+      "path": "frontend/portals/ProductDescriptionAfter",
       "target": "product.description.after"
+    },
+    {
+      "type": "translations",
+      "path": "frontend/locale/en-US.json",
+      "id": "locale/en-US"
     }
   ],
   "configuration": {
