@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "env",
+    "react"
+  ],
+  "plugins": [
+    "lodash",
+    "transform-object-rest-spread",
+    "transform-class-properties",
+    "transform-export-extensions",
+    "transform-react-jsx"
+  ]
+}
